@@ -1,19 +1,27 @@
 package segmentedfilesystem;
 
+<<<<<<< HEAD
 import java.io.File;
 import java.io.FileOutputStream;
+=======
+
+>>>>>>> 457b7dc81de254f442bd2a9152a94df305751c4b
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashMap;
+=======
+>>>>>>> 457b7dc81de254f442bd2a9152a94df305751c4b
 
 
 public class Main {
 
+<<<<<<< HEAD
 
 	public static void main(String[] args) throws IOException {
 		int port = 6014;
@@ -201,3 +209,19 @@ public class Main {
 	}
 	
 }
+=======
+	public static void main(String[] args) throws IOException {
+		int port = 6014;
+		InetAddress address = InetAddress.getByName("146.57.33.55");
+		
+		DatagramSocket socket = new DatagramSocket();
+		
+		//Say hello to server
+		byte[] buffer = new byte[1024];
+		DatagramPacket packetToSend = new DatagramPacket(buffer, buffer.length, address, port);   
+		socket.send(packetToSend);
+		
+	}
+}
+
+>>>>>>> 457b7dc81de254f442bd2a9152a94df305751c4b
