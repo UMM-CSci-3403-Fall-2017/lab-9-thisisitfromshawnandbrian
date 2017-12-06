@@ -55,7 +55,7 @@ public class FileTool {
 	/*
 	 * A simple comparator to sort array of bytes
 	 */
-	private static class FileSorter implements Comparator<byte[]>{
+	public static class FileSorter implements Comparator<byte[]>{
 		@Override
 		public int compare (byte[] b1, byte[] b2){
 			int num1 = getPacketNumber(b1);
